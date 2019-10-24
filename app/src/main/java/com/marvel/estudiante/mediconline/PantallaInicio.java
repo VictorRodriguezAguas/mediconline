@@ -8,7 +8,7 @@ import android.os.Bundle;
 public class PantallaInicio extends AppCompatActivity {
 
     @Override
-    protected void onCreate(final Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_inicio);
 
@@ -17,6 +17,7 @@ public class PantallaInicio extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(PantallaInicio.this, MainActivity.class);
                 startActivity(intent);
+                finish();
 
             }
         },3000);
